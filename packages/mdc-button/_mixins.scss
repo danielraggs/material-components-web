@@ -113,10 +113,10 @@
   line-height: $mdc-dense-button-height;
 }
 
-@mixin mdc-button-filled-accessible($container-color) {
-  $light-or-dark: mdc-theme-light-or-dark($container-color);
+@mixin mdc-button-filled-accessible($container-fill-color) {
+  $light-or-dark: mdc-theme-light-or-dark($container-fill-color);
 
-  @include mdc-button-container-fill-color($container-color);
+  @include mdc-button-container-fill-color($container-fill-color);
 
   @if ($light-or-dark == "light") {
     @include mdc-button-ink-color(text-primary-on-dark);
